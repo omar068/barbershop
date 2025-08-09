@@ -1,0 +1,231 @@
+.premium-services-page {
+  padding-bottom: 60px;
+}
+
+.page-header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.premium-services-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.premium-services-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.premium-services-intro p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666;
+  line-height: 1.6;
+}
+
+.premium-services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.premium-service-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.premium-service-item:hover {
+  transform: translateY(-5px);
+}
+
+.premium-service-image {
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.premium-service-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #d4af37;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.premium-service-content {
+  padding: 25px;
+  background-color: white;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.premium-service-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.premium-service-content p {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.premium-service-features {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.premium-service-features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+.premium-service-features li:last-child {
+  border-bottom: none;
+}
+
+.premium-service-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin: 15px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #c4a030;
+}
+
+/* Membership Section */
+.membership-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.membership-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.membership-section > p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #666;
+}
+
+.membership-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.membership-benefit {
+  padding: 25px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.membership-benefit h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.membership-benefit p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.membership-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.membership-price {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.price-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.price-period {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .premium-services-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .membership-benefits {
+    grid-template-columns: 1fr;
+  }
+}
